@@ -1,1 +1,20 @@
-// Mixins Here
+.btn-style(){
+    width: 25%;
+    text-align: center;
+    padding: 3% 3.5% 2% 3.5%;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-color(@color, @txt-color){
+    background-color:@color;
+    color: @txt-color;
+}
+
+.btn-hover{
+    &:hover{
+        background-color: @sea-shell;
+        color: @btn-bg-color;
+    }
+}
