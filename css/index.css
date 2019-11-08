@@ -141,6 +141,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    max-width: 500px;
+  }
+}
 h1,
 h2,
 h3,
@@ -168,11 +174,10 @@ p {
   text-align: center;
   padding: 1.5%;
   background-color: #F6F6F6;
-  margin-top: 1%;
 }
 .navigation h1 {
   font-size: 4rem;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   cursor: pointer;
 }
 .navigation nav a {
@@ -195,7 +200,23 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  footer {
+    max-width: 490px;
+    overflow: hidden;
+  }
+}
+footer p {
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .home {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -205,6 +226,8 @@ footer {
 }
 .home .intro img {
   border-radius: 7px;
+  width: 100%;
+  text-align: center;
 }
 .home .space-images {
   display: flex;
@@ -257,6 +280,7 @@ footer {
 }
 .home .walk .walk-text {
   width: 50%;
+  margin-right: 0;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text {

@@ -8,7 +8,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  //my code
-  margin-bottom: 3%;
+  @media @mobile{
+    max-width: 490px;
+    overflow: hidden;
+  }
+  
+
+  p{
+    width: 100%;
+    overflow: hidden;
+  }
 }

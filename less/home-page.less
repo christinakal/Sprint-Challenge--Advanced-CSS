@@ -2,7 +2,15 @@
 
 .home {
 
+  @media @mobile{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+
   .intro {
+
+  
 
     h2 {
       padding: 15px;
@@ -15,6 +23,8 @@
     //my code
     img{
       border-radius: 7px;
+      width: 100%;
+      text-align: center;
     }
   
   }
@@ -80,6 +90,7 @@
     }
     .walk-text {
       width: 50%;
+      margin-right:0;
 
       //my code
       @media @mobile{
