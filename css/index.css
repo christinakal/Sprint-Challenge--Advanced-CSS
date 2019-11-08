@@ -308,3 +308,93 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+form {
+  font-size: 2rem;
+  margin-top: 3%;
+}
+@media (max-width: 500px) {
+  form {
+    padding: 0 3%;
+  }
+}
+form h1 {
+  text-align: center;
+  padding: 5%;
+  font-size: 3rem;
+}
+form .name {
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  form .name {
+    flex-direction: column;
+  }
+}
+form .name .first-name {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 2%;
+}
+@media (max-width: 500px) {
+  form .name .first-name {
+    width: 100%;
+  }
+}
+form .name .last-name {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  form .name .last-name {
+    width: 100%;
+  }
+}
+form .email {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+form input {
+  width: 100%;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-size: 2rem;
+}
+form .btn {
+  background-color: #22283A;
+  color: #F1F1F1;
+  width: 100%;
+  text-align: center;
+  padding: 3% 3.5% 2% 3.5%;
+  font-size: 1.7rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 20%;
+  text-decoration: none;
+  border: none;
+}
+form .btn:hover {
+  background-color: #F1F1F1;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  form .btn {
+    width: 100%;
+    padding: 5%;
+  }
+}
+.thankyou {
+  font-size: 15rem;
+  text-align: center;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .thankyou {
+    font-size: 10rem;
+  }
+}
