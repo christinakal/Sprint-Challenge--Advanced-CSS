@@ -31,6 +31,18 @@
       height: 100%;
     }
 
+    //my code
+    @media @mobile{
+      img:nth-child(1){
+        width: 100%;
+      }
+      img:nth-child(2){
+        display: none;
+      }
+      img:nth-child(3){
+        display: none;
+      }   
+    }
     
   }
 
@@ -58,10 +70,23 @@
 
 
     //my code
-
+    @media @mobile{
+      flex-direction: column-reverse; 
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      margin-left:2%;
+      margin-top:0;
+    }
     .walk-text {
       width: 50%;
 
+      //my code
+      @media @mobile{
+        width: 100%;
+        margin-left:0;
+        margin-right:2.5%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -77,8 +102,10 @@
         .btn-style();
         .btn-hover();
 
-
-        
+        @media @mobile{
+          width: 100%;
+          padding: 5%;
+        }
       }
     }
 
@@ -86,6 +113,13 @@
       width: 46%;
       margin-left: 4%;
 
+      //my code
+      @media @mobile{
+        width: 100%;
+        padding-bottom: 10%;
+        margin-left:0;
+        margin-right:4%;
+      }
       
       img {
         width: 100%;
